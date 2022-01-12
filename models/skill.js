@@ -1,9 +1,9 @@
 const skills = [
-    {id: 125223, skill: 'Get' },
-    {id: 127904, skill: 'Post'},
-    {id: 139608, skill: 'Put'},
-    {id: 123456, skill: 'Delete'},
-    {id: 123457, skill: 'Crud'},
+    {id: 125223, skill: 'Get', has: true},
+    {id: 127904, skill: 'Post',has: true},
+    {id: 139608, skill: 'Put', has: true},
+    {id: 123456, skill: 'Delete', has: false},
+    {id: 123457, skill: 'Crud', has: false}
   ];
 
   module.exports = {

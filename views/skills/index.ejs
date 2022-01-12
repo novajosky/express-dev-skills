@@ -2,13 +2,16 @@
 
 <h1>Skills</h1>
 <ul>
-  <% todos.forEach(function(s) { %>
+  <% skills.forEach(function(s) { %>
     <li>
-      <a href="/skills/<%= t.id %>">
+        <a href="/skills/<%= s.id %>">
+            <%= s.id %>
+        </a>
+
         <%= s.skill %>
-      </a>
-        - 
-      <%= s.done ? 'done' : 'not done' %>
+            -
+            <%= s.has ? 'yes' : 'no' %>
+
     </li>
   <% }); %>
 </ul>

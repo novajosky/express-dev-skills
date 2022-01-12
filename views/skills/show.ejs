@@ -1,7 +1,11 @@
 <%- include('../partials/header') %>
 
-<h1>Skills #<%= skill.id %></h1>
+<h1>Skill #<%= skill.id %></h1>
+
 <h3><%= skill.skill %></h3>
-<h3>Complete: <%= skill.done ? 'Yes' : 'No' %></h3>
+
+<h3>Complete:
+    <%= skill.has ? "yes" : "no" %>
+</h3>
 
 <%- include('../partials/footer') %>
