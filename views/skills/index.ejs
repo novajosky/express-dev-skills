@@ -4,15 +4,16 @@
 <ul>
   <% skills.forEach(function(s) { %>
     <li>
-        <a href="/skills/<%= s.id %>">
-            <%= s.id %>
-        </a>
-
+      <form action="/skills/<%= s.id %>?_method=DELETE" method="POST"
+        class="delete-form">
+        <button type="submit">X</button>
+      </form>
+      <a href="/skills/<%= s.id %>">
         <%= s.skill %>
-            -
-            <%= s.has ? 'yes' : 'no' %>
-
-    </li>
+      </a>
+        - 
+      <%= s.done ? 'done' : 'not done' %>
+    <li>
   <% }); %>
 </ul>
 

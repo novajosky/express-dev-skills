@@ -1,0 +1,11 @@
+<%- include('../partials/header') %>
+
+<h1>EDIT Skill</h1>
+<!-- the action attribute is the path of the request when the form is submitted -->
+<form action="/skills/<%= skill.id %>?_method=PUT" method="POST" autocomplete="off">
+    <input type="text" name="todo" value="<%= skill.skill %>">
+    <label><input name="done" type="checkbox" <%= skill.done ? 'checked' : '' %>> Completed?</label>
+    <button type="submit">Save Skill</button>
+</form>
+
+<%- include('../partials/footer') %>
