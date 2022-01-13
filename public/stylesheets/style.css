@@ -1,6 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: lightblue;
 }
 
 a {
@@ -11,9 +12,15 @@ a {
   display: inline-block;
   margin-right: 10px;
 }
-	
-.delete-form button {
-  color: red;
+
+button {
+  padding: 5px;
+  border-radius: 55%;
+}
+
+button:hover {
+  color: tomato;
+  background-color: greenyellow;
 }
 	
 li {
